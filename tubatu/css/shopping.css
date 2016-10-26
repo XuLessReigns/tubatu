@@ -1,0 +1,409 @@
+
+/*----------------------------------版心--------------------*/
+#shopping_container{width:980;margin:0 auto;}
+.cart_empty_box {
+    padding: 45px 230px 45px 325px;
+    border: 1px solid #ddd;
+}
+.cart_empty_box .cart_ico {
+    float: left;
+    width: 93px;
+    height: 104px;
+    background: url(../images/new_mall.png);
+    background-position: -299px -1px;
+}
+.cart_empty_box div.cart_empty_text {
+    float: left;
+    margin: 35px 0 0 35px;
+}
+.cart_empty_text p {
+    font-size: 14px;
+    color: #333;
+}
+.cart_empty_text a {
+    width: 124px;
+    padding: 0;
+    display: block;
+    font-size: 16px;
+}
+ .cart_empty_text a {
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #ec4444;
+    text-align: center;
+    padding: 0 13px;
+    margin-top: 16px;
+}
+.other_hot {
+    margin-top: 35px;
+    overflow: hidden;
+}
+.cart_list_title h5, .other_hot h5 {
+    font-weight: normal;
+    font-size: 16px;
+    color: #333;
+}
+.other_hot_list .left_ico_arrow {
+	background: url(../images/new_mall.png);
+    background-position: -166px -568px;
+    left: 0;
+}
+.other_hot_list .right_ico_arrow {
+    right: 0;
+    background: url(../images/new_mall.png);
+    background-position: -195px -568px;
+}
+.other_hot_list .left_ico_arrow, .other_hot_list .right_ico_arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -21px;
+    width: 25px;
+    height: 43px;
+    cursor: pointer;
+    z-index: 9999;
+}
+.other_hot_list ul li {
+    float: left;
+    width: 220px;
+    margin-right: 20px;
+}
+.hot_bottom {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.hot_bottom a.desc {
+    color: #333;
+    display: block;
+    width: 192px;
+}
+.ect {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.col_l {
+    float: left;
+}
+
+.hot_bottom .my_price {
+    color: #ec4444;
+    font-size: 20px;
+}
+.hot_bottom .market_price {
+    color: #999;
+}
+
+.other_hot_list {
+    padding: 20px;
+    overflow: hidden;
+    width: 938px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    position: relative;
+}
+.mall_content_special .main_content_box {
+    width: 980px;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+
+.mall_content_special .progress_bills {
+    width: 485px;
+    margin: 0 auto;
+}
+.progress_bills {
+    padding: 40px;
+}
+.progress_bills ul li {
+    float: left;
+    position: relative;
+    margin-right: 89px;
+    display: inline;
+    width: 102px;
+}
+.progress_bills .comit_bills {
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+}
+.progress_bills ul li.on p {
+    color: #01af69;
+}
+.progress_bills .comit_bills {
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+}
+.progress_bills ul li p {
+    text-align: center;
+    line-height: 16px;
+}
+.progress_bills ul li.on .prog_num {
+    background-position: 0 0 !important;
+}
+.progress_bills .prog_num {
+    width: 25px;
+    height: 25px;
+    display: block;
+    margin: 0 auto;
+    font-family: 'Arial';
+    line-height: 25px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: url(../images/new_mall.png);
+    background-position: 0 -29px;
+}
+.mall_content_special .progress_bills li.last {
+    margin-right: 0;
+}
+.progress_bills .prog_line {
+    width: 130px;
+    height: 3px;
+    background-color: #eee;
+    position: absolute;
+    left: -109px !important;
+    _left: -148px !important;
+    top: 10px;
+    overflow: hidden;
+}
+.cart_list_title {
+    margin-bottom: 15px;
+    height: 36px;
+    line-height: 36px;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.sp_msg table {
+    width: 100%;
+}
+.sp_msg .sp_msgth td {
+    background-color: #f8f8f8;
+    height: 34px;
+    color: #333;
+	padding-left: 20px;
+}
+.sp_msg .fisrt_spmsg {
+    padding-left: 20px;
+}
+.first_spmsg span.checkall_special{
+	margin-right: 75px;
+}
+
+input, select {
+    color: #333;
+}
+.mall_content_special .sp_msg .sp_msgtd.on td {
+    background-color: #f3fff9;
+    padding: 0;
+}
+.mall_content_special .cart_details_list .sp_msg .sp_msgtd td {
+    border-bottom: 1px solid #ddd;
+}
+.mall_content_special .sp_msg .sp_msgtd td {
+    border: none;
+    border-top: 1px solid #e2faea;
+    height: auto;
+    padding: 20px 0;
+    background-color: #fff;
+}
+.sp_msg .sp_msgtd td {
+    background-color: #f8f8f8;
+    height: 94px;
+    border: 1px solid #ddd;
+    color: #333;
+}
+.pr_td {
+    padding: 0 !important;
+}
+.pr {
+	width: 410px;
+	height: 60px;
+    position: relative;
+    padding: 20px 0;
+}
+
+.sp_msgtd .tbd_checkbox {
+    margin: 22px 20px 0 20px;
+    position: relative;
+    z-index: 1;
+}
+.sp_msgtd .sp_size span {
+    margin-right: 15px;
+    color: #666;
+    display: block;
+}
+
+
+.sp_msgtd .sp_text_intro {
+    font-size: 14px;
+    color: #333;
+    margin-left: 8px;
+    display: block;
+    width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.sp_msgtd .sp_size {
+    margin-left: 8px;
+    margin-top: 3px;
+}
+.mall_content_special .cart_details_list .sp_msg .sp_msgtd td {
+    border-bottom: 1px solid #ddd;
+}
+.mall_content_special .cart_details_list .sp_msg .sp_msgtd td {
+    border-bottom: 1px solid #ddd;
+}
+.mall_content_special .sp_msg .sp_msgtd td {
+    border: none;
+    border-top: 1px solid #e2faea;
+    height: auto;
+    padding: 20px 0;
+    background-color: #fff;
+}
+.mall_content_special .sp_msg .sp_msgtd.on td {
+    background-color: #f3fff9;
+    padding: 0;
+}
+.mall_content_special .sp_msg .sp_msgtd td {
+    border: none;
+    border-top: 1px solid #e2faea;
+    height: auto;
+    padding: 20px 0;
+    background-color: #fff;
+}
+.mall_content_special .cart_details_list .sp_msg .sp_msgtd td {
+    border-bottom: 1px solid #ddd;
+}
+.mall_content_special .sp_msg .sp_msgtd.on td {
+    background-color: #f3fff9;
+    padding: 0;
+}
+.sp_msg .sp_msgtd .hlight {
+    color: #e81a62;
+}
+.mall_content_special .cart_ico_operate {
+    width: 14px;
+    height: 17px;
+    background: url(../images/new_mall.png);
+    background-position: -339px -990px;
+    display: block;
+    cursor: pointer;
+}
+
+.sp_msg .ctr_qty {
+    width: 64px;
+    margin: 0 auto;
+}
+.sp_msg .ctr_qty a {
+	display: inline-block;
+    width: 11px;
+    height: 11px;
+    margin-top: 3px;
+    cursor: pointer;
+    line-height: 9px;
+    text-align: center;
+    border: 1px solid #e8e8e8;
+    color: #999;
+    float: left;
+}
+.sp_msg .ctr_qty input.num1 {
+	float: left;
+    width: 27px;
+    height: 17px;
+    border: 1px solid #e8e8e8;
+    line-height: 17px;
+    text-align: center;
+    color: #333;
+    background-color: #fff;
+    margin: 0 3px;
+    float: left;
+}
+.account_total {
+    line-height: 46px;
+    margin-top: 20px;
+}
+.account_total .total_left {
+    padding: 0 20px;
+    height: 46px;
+    border: 1px solid #ddd;
+    border-right: none;
+    background-color: #fff;
+    width: 826px;
+}
+.account_total .total_options input {
+    float: left;
+    margin: 17px 3px 0 0;
+}
+input, select {
+    color: #333;
+}
+.mall_content_special .total_options span {
+    float: left;
+    _margin-top: 3px;
+}
+.account_total .accounted_op {
+    margin-left: 20px;
+}
+.account_total .accounted_op a {
+    color: #666;
+}
+.account_total .accounted_op em {
+    color: #ddd;
+    margin: 0 10px;
+}
+.account_total .total_num {
+    width: 100px;
+    text-align: right;
+}
+.account_total .total_num span {
+    color: #ec4444;
+}
+.account_total .total_num {
+    width: 100px;
+    text-align: right;
+}
+.sp_zonge {
+    margin-left: 20px;
+    height: 46px;
+}
+.sp_zonge p {
+    line-height: 14px;
+    margin-top: 6px;
+}
+
+.account_total .total_price {
+    width: 350px;
+    margin-left: 20px;
+}
+.account_total .total_price span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e81a62;
+    float: right;
+}
+.account_total .total_price em {
+    float: right;
+}
+.mall_content_special .total_right {
+    width: 113px !important;
+}
+.total_right {
+    text-align: center;
+    width: 113px;
+    line-height: 46px;
+}
+.total_right a {
+    color: #fff;
+    display: block;
+    background-color: #e81a62;
+    font-size: 18px;
+    height: 48px;
+    _height: 51px;
+}

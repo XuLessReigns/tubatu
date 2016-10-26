@@ -1,0 +1,213 @@
+/*----------------------------------版心--------------------*/
+#shopList_container{width:1180px;margin:0 auto;}
+
+/*--------------------------------shopList_container-----------------------*/
+.search_select_type {
+    border: 1px solid #eaeaea;
+    position: relative;
+    /* width: 718px; */
+}
+.mt20 {
+    margin-top: 20px;
+}
+.search_mall_fr {
+    color: #999;
+    float: right;
+    line-height: 39px;
+    margin-right: 10px;
+}
+.f_song {
+    font-family: f_STSong,"宋体";
+}
+.search_mall_nav {
+    padding: 10px 0 10px 24px;
+    height: 19px;
+    font-weight: normal;
+    /* border-bottom: 1px solid #eaeaea; */
+}
+.search_mall_nav a {
+    color: #666;
+}
+.search_mall_nav .f_song {
+    margin-left: 10px;
+}
+.search_mall_nav a {
+    color: #666;
+}
+.search_mall_nav a.link_e81a62 {
+    border: 1px solid #e81a62;
+    padding: 1px 0 1px 8px;
+    line-height: 14px;
+    color: #e81a62;
+    background: #fff;
+}	
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+.search_select_type .search_st_dl {
+    /* width: 718px; */
+    background: #f8f8f8;
+    border-top: 1px dotted #eaeaea;
+    width: 100%;
+    margin-top: -1px;
+    position: relative;
+    overflow: hidden;
+    _zoom: 1;
+    /* height: 210px; */
+    /* float: left; */
+}
+.search_select_type .search_st_dl .search_st_dt {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 78px;
+    padding-left: 14px;
+    float: left;
+    line-height: 36px;
+    z-index: 1;
+    color: #999;
+    padding-top: 5px;
+}
+.search_select_type .search_st_dl .search_st_dt a {
+    color: #999;
+}
+.search_select_type .search_st_dl .search_st_dd {
+    float: left;
+    width: 958px;
+    /* margin-left: 110px; */
+    background: #fff;
+    display: inline;
+    font-family: 宋体;
+}
+.search_st_dl .max_height_s {
+    max-height: 60px;
+    overflow-y: auto;
+    _height: expression(document.body.clientHeight > 60 ?"60px": "auto");
+}
+.search_st_dl .search_st_dd {
+    position: relative;
+    padding: 5px 108px 5px 20px;
+}
+.search_select_type .search_st_dl .search_st_dd a {
+    margin: 5px 40px 5px 0;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: #666;
+}
+.search_st_dl .choice_options_box {
+    z-index: 1;
+    position: absolute;
+    right: 18px;
+    top: 6px;
+    padding: 0;
+}
+.search_st_dl .choice_options_box a {
+    margin-right: 10px;
+    width: auto;
+    min-width: 1px;
+}
+.search_st_dl .choice_options {
+    border: 1px solid #f2f0ef;
+    background: #f2f0ef;
+    padding: 0 5px;
+    line-height: 16px;
+    height: 16px;
+    font-family: f_STSong,"宋体";
+}
+.icn_insert {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../images/mall.png);
+    background-position: 0 0;
+    _background-position: 0 3px;
+    margin-bottom: 3px;
+    margin-right: 8px;
+}
+
+/*图片区域*/
+.mt10 {
+    margin-top: 10px;
+}
+.list_container .list {
+    overflow: hidden;
+    margin-left: -20px;
+    _margin-left: -18px;
+}
+.list_container .list li {
+    border: 1px solid #e8e8e8;
+    float: left;
+    margin-left: 20px;
+    _margin-left: 18px;
+    width: 218px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: inline;
+}
+.list_container .list li:hover{
+	 border: 3px solid #E81A62;
+    width: 214px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}	
+.list_container .list li .pic {
+    width: 210px;
+    margin: 4px auto;
+    display: block;
+    position: relative;
+}
+.list_container .list li .pic img {
+    vertical-align: top;
+}
+.list_container .cur_pric {
+    border-top: none;
+    overflow: hidden;
+    width: 204px;
+    padding: 0 6px;
+}	
+.list_container .cur_pric .cur_msg {
+    height: 14px;
+    line-height: 14px;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.list_container .cur_pric .cur_msg.f_c_e81a62 {
+    color: #e81a62;
+}
+.list_container .cur_pric .cur_msg {
+    height: 14px;
+    line-height: 14px;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.list_container .cur_pric .pri_msg {
+    overflow: hidden;
+    font-size: 14px;
+    color: #e81a62;
+}
+.list_container .cur_pric .pri_msg span {
+    color: #e81a62;
+    font-size: 21px;
+}
+.f_arial {
+    font-family: arial;
+}
+.list_container .cur_pric .pri_msg del {
+    margin-left: 10px;
+    color: #999;
+}
+.list_container .cur_pric .pri_total {
+    border-top: 1px solid #e8e8e8;
+    line-height: 32px;
+}

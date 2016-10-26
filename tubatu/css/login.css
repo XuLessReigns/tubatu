@@ -1,0 +1,330 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img,input { margin:0; padding:0; }
+img { border:none; }
+img{display: block;}
+input{outline: none;border: 0;}
+ul, ol,li { list-style:none; } 
+body {font-family:"微软雅黑";font-size: 12px;}
+a { text-decoration:none; cursor: pointer;color: #333;outline: none;}
+em,i{font-style: normal;}
+html,body{height: 100%;width: 100%;}
+
+/*----------------------------------版心--------------------*/
+#header,#logo1,#container{width:980px;margin:0 auto;}
+
+/*--------------------------------header-----------------------*/
+#header_back{
+	height: 35px;
+	position: relative;
+    background: #f9f9f9;
+    border-bottom: 1px solid #eee;
+    z-index: 3000;
+    width: 100%;
+}
+#header{
+	height: 35px;
+}
+.header_left{
+	float: left;
+	height: 35px;
+    color: #999;
+}
+.header_left ul{
+	height: 35px;
+}
+.header_left ul li{
+	display: inline-block;
+    height: 35px;
+    position: relative;
+    line-height: 35px;
+}
+.header_left ul li em{
+	width: 10px;
+    height: 14px;
+    float: left;
+    margin: 11px 5px 0 0;
+	display: inline-block;
+	background: url(../images/global1.png);
+}
+.header_left ul li a{
+	color: #00af63;
+}
+.header_right{
+	float: right;
+	height: 35px;
+	line-height: 35px;
+}
+.header_right a,span{
+	color: #999;
+}
+.header_right a{
+	padding: 0 15px;
+}
+.header_right span{
+	display: inline-block;
+	height: 35px;
+}
+.header_right .orange{
+	color: #f25618;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+.header_right a:hover{
+	color: #f25618;
+}
+/*-------------------------------logo1-----------------------*/
+#logo1_back{
+	position: relative;
+    z-index: 2000;
+    width: 100%;
+}
+#logo1{
+	height: 93px;
+}
+#logo1 span.register_logo{
+	margin-right: 20px;
+	float: left;
+    margin-top: 28px;
+    height: 65px;
+    width: 320px;
+    background: url(../images/global2.png);
+    background-position: 0 -350px;
+   /* margin-right: 94px;*/
+    display: inline;
+}
+.register_logo a{
+	display: block;
+    height: 0;
+    overflow: hidden;
+    padding-top: 65px;
+}
+.register_title{
+	float: left;
+    display: inline;
+    height: 42px;
+    margin-top: 39px;
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 42px;
+    color: #333;
+    border-left: 1px solid #f8f8f8;
+}
+/*--------------------------------container-----------------------*/
+#container_back{
+	height: 556px;
+	padding-bottom: 30px;
+}
+#container{
+	height: 556px;
+	padding-bottom: 30px;
+}
+.container_left{
+	float: left;
+    display: inline;
+	width: 380px;
+    height: 300px;
+    margin: 14px 0 0 68px;
+}
+.container_left img{
+	display: block;
+}
+.container_right{
+	float: left;
+    display: inline;
+	width: 250px;
+    margin: 26px 0 0 80px;
+    padding: 30px 40px;
+    border: 1px solid #eee;
+}
+.login_tab {
+    width: 250px;
+    height: 35px;
+    position: relative;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+}
+.login_tab ul li{
+    width: 124px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    float: left;
+    cursor: pointer;
+}
+.login_tab ul li a{
+    color: #333;
+    font-size: 16px;
+    width: 125px;
+    margin: 0 auto;
+    height: 35px;
+    display: block;
+}
+.login_tab ul li.on a {
+    color: #00af63;
+    border-bottom: 2px solid #00b161;
+}
+.login_tab ul li a b{
+	display: block;
+    position: absolute;
+    width: 18px;
+    height: 11px;
+    background: url(../images/global2.png);
+    background-position: -201px -16px;
+    top: 0;
+    right: 132px;
+}
+.wx_codeLayer{
+    height: 180px;
+}
+#img_weixincode {
+    position: relative;
+    width: 141px;
+    height: 141px;
+    left: 56px;
+}
+.weixin_login span{
+    display: block;
+    text-align: center;
+    font-size: 14px;
+}
+.weixin_title{
+	margin-top: 11px;
+}
+.weixin_login img{
+    margin: 0 auto;
+    border: 1px solid #efefef;
+}
+#img_weixincode i {
+	display: block;
+	background: url(../images/global2.png);
+	background-position: -221px -223px;
+	width: 29px;
+	height: 29px;
+	position: absolute;
+	left: 56px;
+	top: 56px;
+}
+.wx_status .wx_link{
+	color: #999;
+    display: block;
+    text-align: center;
+    margin: 7px 0 0 98px;
+    float: left;
+    font-size: 12px;
+}
+.login_select {
+    position: relative;
+    width: 250px;
+    margin: 0 auto 20px;
+}
+.login_select input{
+    display: block;
+    width: 228px;
+    height: 18px;
+    padding: 7px 10px;
+    color: #333;
+    border: 1px solid #ccc;
+}
+.index_check{
+	display: none;
+	color: #ff6666;
+    height: 14px;
+   /* display: block;*/
+    line-height: 14px;
+    position: absolute;
+    margin: 0px 0 0px 0;
+    left: 0;
+    bottom: -18px;
+}
+.index_check em{
+	background: url(../images/global2.png);
+	background-position: -51px -165px;
+    float: left;
+    margin-right: 3px;
+    width: 13px;
+    height: 13px;
+    position: relative;
+    top: 1px;
+}
+.safe {
+    position: relative;
+    width: 250px;
+    margin: 0 auto;
+    padding: 0 0 20px;
+    line-height: 14px;
+}
+.safe_login {
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    overflow: hidden;
+    height: 14px;
+    line-height: 14px;
+    color: #999;
+    vertical-align: middle;
+    zoom: 1;
+}
+.safe_login input {
+    margin-right: 5px;
+    position: relative;
+    z-index: 1;
+    vertical-align: text-bottom;
+    margin-bottom: 1px;
+}	
+label {
+    cursor: default;
+}
+.forget_pw {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #666;
+}
+.btn_login{
+    display: block;
+    width: 250px;
+    height: 36px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 36px;
+    text-align: center;
+    color: #fff;
+    background: #f36f20;
+    border: 0;
+    cursor: pointer;
+}
+ul.entries{
+	overflow: hidden;
+    padding-top: 10px;
+}
+.entries .other_login{
+	float: left;
+}
+.entries .other_login a{
+	display: inline-block;
+	margin-right: 35px;
+    overflow: hidden;
+    color: #666;
+    vertical-align: middle;
+    zoom: 1;
+}
+.entries .other_login i{
+	float: left;
+    display: inline;
+    height: 16px;
+    margin: 0 3px 0 0;
+    /*overflow: hidden;*/
+}
+.qq_login i {
+    width: 14px;
+    background: url(../images/global2.png) no-repeat;
+    background-position: -117px -188px;
+}
+.weibo_login i {
+    width: 16px;
+    background: url(../images/global2.png) no-repeat;
+    background-position: -132px -188px;
+}
+.entries .other_login .free_login{
+	float: right;
+	margin-right: 0;
+}

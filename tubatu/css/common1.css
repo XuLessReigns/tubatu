@@ -1,0 +1,628 @@
+/*----------------------------------版心--------------------*/
+
+/*---------------------------footer--------------------*/
+#footer,#footer_buttom{width:1180px;margin:0 auto;}
+#footer{
+	overflow: hidden;
+}
+.mall_genuine_box {
+    margin-top: 60px;
+    border-top: 1px solid #eee;
+}
+.mall_genuine_red, .mall_genuine_rose {
+    width: 1180px;
+    overflow: hidden;
+    margin: 0 auto 28px;
+}
+.mall_genuine_rose .first {
+    margin-left: 4%;
+    _margin-left: 1.5%;
+}
+.mall_genuine_rose dl {
+    width: 24%;
+    height: 60px;
+    margin-top: 28px;
+    overflow: hidden;
+}
+.mall_genuine_rose dl, .mall_genuine_rose dt, .mall_genuine_rose dd {
+    float: left;
+}
+.mall_genuine_rose dt {
+    margin-right: 15px;
+}
+.mall_genuine_rose dl, .mall_genuine_rose dt, .mall_genuine_rose dd {
+    float: left;
+}
+.icn_n_zheng_b {
+	display: inline-block;
+    width: 61px;
+    height: 60px;
+    background: url(../images/n_global.png);
+    background-position: 0 0;
+}
+.mall_genuine_rose dd {
+    margin-top: 5px;
+    float: left;
+}
+.mall_genuine_rose dd b {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+}
+.mall_genuine_rose dd em {
+    font-size: 16px;
+    color: #747474;
+}
+.icn_n_song_b {
+	display: inline-block;
+    width: 61px;
+    height: 60px;
+    background: url(../images/n_global.png);
+    background-position: -61px 0;
+}
+.icn_n_shang_b {
+	display: inline-block;
+    width: 61px;
+    height: 60px;
+    background: url(../images/n_global.png);
+    background-position: -122px 0;
+}
+.icn_n_tui_b {
+	display: inline-block;
+    width: 61px;
+    height: 60px;
+    background: url(../images/n_global.png);
+    background-position: -183px 0;
+}
+.shop_direct_dl {
+    border-top: 1px solid #eee;
+    padding: 30px 0;
+    width: 1180px;
+    margin: auto;
+    overflow: hidden;
+}
+.shop_direct_dl dl {
+    float: left;
+    width: 178px;
+    text-align: left;
+    padding-right: 0;
+    padding-left: 117px;
+}
+.shop_direct_dl dt {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 14px;
+}
+.shop_direct_dl dd {
+    line-height: 14px;
+    margin-top: 8px;
+}
+.shop_direct_dl dd a {
+    color: #999;
+    font-size: 12px;
+}
+.shop_direct_dl dl.last {
+    width: 86px;
+    padding-left: 70px;
+    padding-right: 0;
+}
+/*---------------------------footer_buttom--------------------*/
+#footer_buttom_back{
+	background: #1f1f1f;
+	min-width: 1220px;
+    width: 100%;
+    padding-bottom: 40px;  
+    border-top: 2px solid #e81a62;
+    float: left;
+}
+#footer_buttom{
+	overflow: hidden;
+	background: #1f1f1f;
+	min-width: 1220px;
+    width: 100%;
+    padding-bottom: 40px;  
+    border-top: 2px solid #e81a62;
+    float: left;
+}
+.footer_bottom { 
+    
+}
+.footer_bottom_container {
+    width: 1220px;
+    margin: 0 auto;
+}
+.fbc_menu {
+    text-align: center;
+    margin-top: 20px;
+}
+.fbc_menu ul li {
+    width: 71px;
+    height: 14px;
+    display: inline-block;
+    font-size: 0;
+    margin-left: -2px;
+}
+.fbc_menu ul li a {
+    float: left;
+    width: 70px;
+    height: 14px;
+    line-height: 14px;
+    color: #fff;
+    font-size: 12px;
+}
+.fbc_menu ul li span {
+    width: 1px;
+    height: 12px;
+    margin-top: 2px;
+    background: #fff;
+    float: left;
+    overflow: hidden;
+}
+.footer_bottom_container .fbc_copyright {
+    margin-top: 28px;
+    text-align: center;
+    height: 14px;
+    line-height: 14px;
+    color: #666;
+}
+.footer_bottom_container .fbc_icp {
+    margin-top: 17px;
+    text-align: center;
+    height: 14px;
+    line-height: 14px;
+    color: #666;
+}
+.footer_bottom_container .fbc_icp a {
+    color: #666;
+    font-family: tahoma, arial, \5b8b\4f53;
+}
+.footer_bottom_container .fbc_icpico {
+    margin-top: 17px;
+    text-align: center;
+    height: 33px;
+}
+.footer_bottom_container .fbc_icpico span{
+	background: url(../images/global.png) no-repeat;
+	display: inline-block;
+	margin-right: 20px;
+	vertical-align: middle;
+}
+.footer_bottom_container .fbc_icpico span.fbc_ico1 {	
+    background-position: -92px -177px;
+    width: 28px;
+    height: 29px;
+}
+.footer_bottom_container .fbc_icpico span.fbc_ico2{	
+    background-position: -121px -144px;
+    width: 32px;
+    height: 33px;
+}
+.footer_bottom_container .fbc_icpico span.fbc_ico3 {
+    background-position: -92px -144px;
+    width: 28px;
+    height: 31px;
+}
+.footer_bottom_container .fbc_icpico span.fbc_ico4 {
+    background-position: 0 -144px;
+    width: 90px;
+    height: 32px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------rightSide--------------------*/
+#rightSide{
+	position: fixed;
+	height: 100%;
+	width: 38px;
+	background: #333;
+	right: 0px;
+	top:0;
+	z-index: 999;
+}
+#rightSide .rightSide_all{
+	position: relative;
+    top: 22%;
+    left: 50%;
+    margin-left: -19px;
+    width: 100%;
+}
+.shopcart{
+	height: 106px;
+	width: 100%;
+	display: block;
+    padding: 10px 0;
+    position: relative;
+}
+#rightSide a:hover{
+	background: #E81A62;
+}
+#rightSide a:hover dl{
+	background: #E81A62;
+}
+.cartimg{
+	margin-left: 11px;
+	width: 16px;
+	height: 16px;
+	background: url(../images/new_mall.png);
+	background-position: -321px -925px;
+	display: block;
+}
+#rightSide a:hover .cartimg{
+	background: url(../images/icon.png);
+	background-position: -175px -10px;
+}
+.carttext{
+	display: block;
+	width: 14px;
+    margin: 0 auto;
+    padding-top: 4px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+}
+
+.count{
+	display: block;
+	width: 20px;
+	border-radius: 10px;
+	background: #FF0000;
+    height: 21px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    line-height: 20px;
+    background-position: -296px -1010px;
+    margin-top: 2px;
+}
+#rightSide a:hover .count{
+	background: #fff;
+	color: #FF0000;
+}
+.rightSide_top{
+	position: relative;
+	width: 100%;
+	height: 300px;
+	border-bottom: 1px solid #484848;
+}
+.rightSide_top .dingdan{
+	padding: 15px 0;
+    height: 41px;
+    position: relative;
+}
+.rightSide_top dt{
+	margin-left: 10px;
+	background: url(../images/new_mall.png);
+}
+.rightSide_top .dingdan dt{
+	width: 16px;
+    height: 17px;
+    background-position: -270px -969px;
+}
+.rightSide_top dd{
+	text-align: center;
+    color: #fff;
+    line-height: 14px;
+    padding: 4px 0;
+}
+.rightSide_top .juan{
+	padding: 15px 0;
+    position: relative;
+}
+.rightSide_top .juan dl{
+    position: relative;
+    background: #333;
+    z-index: 20;
+}
+.rightSide_top .dingdan,.juan,.kefu,.erweima{
+    position: relative;
+    background: #333;
+    z-index: 20;
+}
+.rightSide_top .juan dt{
+	width: 18px;
+    height: 15px;
+    background-position: -298px -969px;
+}
+.rightSide_top .kefu{
+	width: 38px;
+    height: 46px;
+	padding-top: 5px;
+	position: relative;	
+}
+.rightSide_top .kefu dl{
+	padding-top: 26px;
+	width: 38px;
+    height: 51px;
+    position: relative;
+    background: #333;
+    z-index: 20;
+}
+.rightSide_top .kefu dt{
+	width: 24px;
+    height: 26px;
+    margin-left: 7px;
+    background: url(../images/global.png);
+    background-position: -424px 0px;
+}
+.rightSide_top .kefu .gif_jm{
+	padding-top: 16px;
+	background: #333 url(../images/jm.gif) 0 10px no-repeat;
+    position: absolute;
+    left: 1px;
+    top: -20px;
+    height: 36px;
+    width: 36px;
+    z-index: 21;
+}
+.rightSide_top .kefu .gif_rabbit{
+	background: url(../images/rabbit.gif) no-repeat;
+    position: absolute;
+    left: -26px;
+    top: 16px;
+    height: 65px;
+    width: 59px;
+    z-index: 10;
+}
+
+.rightSide_top .erweima{
+	margin-top: 31px;
+	width: 38px;
+    height: 18px;
+	padding: 15px 0;
+    position: relative;
+}
+.rightSide_top .erweima .ewm{
+	display: block;
+	margin-left: 11px;
+	width: 17px;
+    height: 17px;
+    background: url(../images/mobile_ico.png);
+    background-position: -81px -1px;
+}
+.sanjiao{
+	width: 5px;
+    height: 9px;
+    background: url(../images/new_mall.png);
+    background-position: -270px -944px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -4px;
+    z-index: 20;
+    display: none;
+}
+#rightSide a:hover .sanjiao{
+	display: block;
+}
+#rightSide .erweima:hover .sanjiao{
+	display: block;
+}
+.cart_tip{
+	position: absolute;
+    left: 0px;
+    top: 15px;
+    z-index: 10;
+    width: 97px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 0;
+    display: block;
+}
+
+.cart_tip a{
+	color: #333;
+}
+#rightSide .cart_tip a:hover{
+	background: #fff;
+}
+
+.rightSide_top .kefu .ewmImg{
+	width: 121px;
+    height: 150px;
+	background: url(../images/mobile_ico.png) -111px -90px;
+    position: absolute;
+    left: 0px;
+    top: -20px;
+    z-index: 10;
+}
+
+.rightSide_bottom{
+	height: 36px;
+	position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+     z-index: 20;
+}
+.return_top{
+	padding: 15px 0;
+    height: 36px;
+    position: relative;
+}
+.return_top dl{
+	width: 38px;
+    height: 36px;
+    position: relative;
+    z-index: 20;
+     background: #333;
+}
+.return_top dt{
+	width: 23px;
+    height: 19px;
+    margin-left: 5px;
+    display: none;
+    background: url(../images/new_mall.png);
+    background-position: -342px -905px;
+}
+.shopping_list{
+	width: 300px;
+    height: 100%;
+    border: 1px solid #ddd;
+    position: absolute;
+    left: 38px;
+    top: 0;
+    background-color: #fff;
+    z-index: 21;
+}
+.shopping_list .list_wrap{
+	padding: 20px;
+}
+.shopping_list .list_title {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+.shopping_list .list_title span {
+    float: left;
+    color: #333;
+    font-size: 16px;
+}
+.shopping_list .list_title em {
+    float: right;
+    width: 16px;
+    height: 16px;
+    background: url(../images/new_mall.png);
+    background-position: -300px -947px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+.shopping_wrap {
+    overflow: hidden;
+    text-align: center;
+}
+.cart_empty_ico {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: inline-block;
+    background: url(../images/new_mall.png);
+    background-position: -369px -904px;
+    margin-top: 30px;
+}
+.cart_empty_text{
+	color: #999;
+    font-size: 16px;
+    text-align: center;
+}
+.shopping_bottom {
+    padding: 17px 0;
+    background-color: #fff;
+}
+.settle_btn a.empty_status_btn {
+    padding: 0;
+    text-align: center;
+    margin-top: 15px;
+}
+.settle_btn a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #e81a62;
+    padding-left: 60px;
+    position: relative;
+}
+.shopping_wrap ul {
+    overflow: auto;
+}
+.shopping_wrap ul li {
+    padding: 20px 0;
+    border-bottom: 1px dotted #ddd;
+}
+.shopping_wrap dl {
+    position: relative;
+    text-align: center;
+}
+.shopping_wrap dt {
+    float: left;
+    margin-right: 7px;
+    margin: 0 auto;
+}
+.shopping_wrap dd {
+    float: left;
+}
+.shopping_wrap dd p {
+    width: 85px;
+    height: 48px;
+    overflow: hidden;
+    line-height: 16px;
+    color: #333;
+    margin-right: 10px;
+}
+.shopping_wrap dd.shopping_price {
+    color: #e81a62;
+}
+.shopping_wrap dd.shoping_count {
+    margin-left: 15px;
+}
+.shopping_list dd.del_ico {
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    width: 13px;
+    height: 13px;
+    background: url(../images/new_mall.png);
+    overflow: hidden;
+    background-position: -303px -989px;
+    cursor: pointer;
+}
+.settle_accounts {
+    margin-bottom: 15px;
+}
+.col_l {
+    float: left;
+}
+.settle_accounts p span {
+    margin: 0 3px;
+}
+.col_r {
+    float: right;
+}
+.settle_accounts p span.settle_num {
+    color: #e81a62;
+    margin: 0 3px;
+}
+.settle_btn a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #e81a62;
+    padding-left: 60px;
+    position: relative;
+}
+.settle_btn a em {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 58px;
+    top: 11px;
+    background: url(../images/new_mall.png);
+    background-position: -321px -904px;
+}

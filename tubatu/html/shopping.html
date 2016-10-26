@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/common1.css" />
+		<link rel="stylesheet" href="../css/shopping.css" />
+		<script type="text/javascript" src="../js/jquery-1.12.4.js" ></script>
+		<script type="text/javascript" src="../js/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="../js/strOper.js" ></script>
+	</head>
+	<body>
+				<!--header-->
+		<div id="header_back">
+			<div id="header">
+				<div class="header_left">
+					<ul>
+						<li>
+							<a href="javascript:;">返回土巴兔首页</a>
+							<span class="hl_line"></span>
+						</li>
+						<li>
+							<div rel="nofollow" class="address_box">
+								<a href="javascript:;" class="address">
+									<p class="ect">北京</p>
+									<i class="triangle_down"></i>
+								</a>
+								<div class="user_memu">
+		                            <div class="user_city">
+		                                <p class="user_hot_city">热门城市</p>
+		                                <a href="javascript:;" rel="nofollow" tname="北京" tcode="bj" townid="1672">北京</a>
+		                                <a href="javascript:;" rel="nofollow" tname="上海" tcode="sh" townid="1103">上海</a>
+		                                <a href="javascript:;" rel="nofollow" tname="广州" tcode="gz" townid="1121">广州</a>
+		                                <a href="javascript:;" rel="nofollow" tname="深圳" tcode="sz" townid="1130">深圳</a>
+		                                <a href="javascript:;" rel="nofollow" tname="南京" tcode="nj" townid="2827">南京</a>
+		                                <a href="javascript:;" rel="nofollow" tname="苏州" tcode="suzhou" townid="2929">苏州</a>
+		                                <a href="javascript:;" rel="nofollow" tname="杭州" tcode="hz" townid="591">杭州</a>
+		                                <a href="javascript:;" class="user_more_city" rel="nofollow">更多城市</a>
+		                            </div>
+		                        </div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="header_right">
+					<ul>
+		                <li>
+		                    <!--未登录状态-->
+		                    <label id="nav_user_data">
+		                        <a href="login.html" class="hr_login" rel="nofollow">请登录</a>
+		                        <a href="register.html" class="hr_reg" rel="nofollow">注册</a>
+		                    </label>
+		                    <span class="hl_line"></span>
+		                    <span class="hl_line"></span>
+		                    <a class="top_service_link" href="javascript:;" rel="nofollow">在线客服</a>
+		                    <span class="hl_line"></span>
+		                    <a href="javascript:;" target="_blank" rel="nofollow">商家入驻</a>
+		                    <span class="hl_line"></span>
+		                    <a href="javascript:;" target="_blank" rel="nofollow">帮助中心</a>
+		                    <span class="hl_line"></span>
+		                    <a class="top_mobile">
+		                        <span class="top_mobile_top"><i class="top_mobile_ico"></i>手机商城</span>
+		                        <span class="top_mobile_bottom">
+		                            <i class="top_mobilecode_ico"></i>
+		                            <i class="top_mobile_bottom_txt">扫一扫<br>手机购物更优惠</i>
+		                        </span>
+		                    </a>
+		                </li>
+		                <li class="header_searchbox">
+		                    <form id="" onsubmit="" method="get">
+		                        <div class="header_search">
+		                            <input type="text" class="header_search_input" name="keyword">
+		                            <em class="header_top_search_input_text"></em>                   
+		                            <input type="submit" class="header_search_submit" value=" "/>
+		                        </div>
+		                    </form>
+		                </li>
+		            </ul>
+				</div>
+			</div>
+		</div>
+		<!--logo-->
+		<div id="logo">
+			<a href="index.html" class="logo_left">土巴兔</a>
+			<a href="index.html"><span class="logo_right">家居商城</span></a>
+		</div>
+		<!--shopping_container-->
+		<div id="shopping_container">
+			<div class="content_wrap mall_content_special">
+				<div class="main_content_box">
+					<div class="progress_bills">
+						<ul class="clear">
+							<li class="on">
+								<div>
+									<em class="prog_num">1</em>
+								</div>
+								<p class="comit_bills">查看购物车</p>
+							</li>
+							<li class="">
+								<div style="position: relative;">
+									<em class="prog_num">2</em>
+									<span class="prog_line"></span>
+								</div>
+								<p class="comit_bills">确定订单信息</p>
+							</li>
+							<li class="last">
+								<div style="position: relative;">
+									<em class="prog_num">3</em>
+									<span class="prog_line"></span>
+								</div>
+								<p class="comit_bills">成功提交订单</p>
+							</li>
+						</ul>
+					</div>
+
+					<div class="cart_details_list">
+						<div class="sp_msg">
+							<div class="cart_list_title">
+								<h5 class="col_l">
+									全部商品&nbsp;
+									<span name="totalgoods">1</span>
+								</h5>
+							</div>
+							<table>
+								<tbody>
+									<tr class="sp_msgth">
+										<td agian="left" width="370" class="first_spmsg">
+											<input class="col_l all_checked checkGood" id="checkall_fis" type="checkbox" />
+											<span class="col_l checkall_special">全选</span>
+											<span class="col_l">商品信息</span>
+											<div class="time_wrap col_l"></div>
+										</td>
+										<td align="center" width="120">单价（元）</td>
+										<td align="center" width="160">数量</td>
+										<td align="center">小计（元）</td>
+										<td align="center">操作</td>
+									</tr>
+								</tbody>
+							</table>
+							
+							<table name="oneself">
+								<tbody>
+									<!--<tr class="sp_msgtd on" skuid="1">
+										<td align="left" width="390" class="first_spmsg pr_td">
+											<div class="data" style="display: none;">
+												<input type="hidden" name="cart[1]['skuid']" class="num col_l" value="1" />
+												<span name="cities"></span>
+											</div>
+											<div class="pr clear">
+												<span class="item_line item_line_half" name="line"></span>
+												<input class="tbd_checkbox col_l checkGood" name="chk_options" type="checkbox" />
+												<div class="clear">
+													<a href="javascript:;" target="_blank" class="col_l">
+														<img src="../images/32de4539f441c84b0216893701317097_64x64M.jpg" width="55" height="55" />
+													</a>
+													<div class="col_l" style="width: 206px;">
+														<a href="javascript:;" target="_blank" class="sp_text_intro">美的（Midea）燃气灶 MQ7210-G人工煤气灶具嵌入式煤气灶</a>
+														<div class="sp_size">
+															<span>适用气源：天然气</span>
+															<span>颜色分类：黑色</span>
+														</div>
+													</div>
+													
+												</div>
+											</div>
+										</td>
+										<td align="center" width="120">
+											<span class="unitPrice">594</span>
+										</td>
+										<td align="center" width="160">
+											<div class="ctr_qty clear">
+												<a href="javascript:;" id="shiftnum">-</a>
+												<input type="text" id="textnum" name="num" class="num1 col_l" value="1" onfocus="this.blur()"/>
+												<a href="javascript:;" class="plus col_l" id="addnum">+</a>
+											</div>
+											<div class="clear num_tips" style="display: none;"></div>
+										</td>
+										<td class="hlight" width="221" align="center">
+											<span class="subtotal">1180.00</span>
+										</td>
+										<td align="center">
+											<em class="cart_ico_operate delgoodtail"></em>
+										</td>
+									</tr>
+								-->
+								</tbody>
+							
+							
+							</table>
+						</div>
+					</div>
+					<div class="account_total clear" style="position: static;">
+						<div class="total_left clear col_l">
+							<div class="total_options col_l clear">
+								<input class="all_checked checkGood" type="checkbox" id="checkall_sec" />
+								<span>全选&nbsp;&nbsp;&nbsp;&nbsp;</span>
+							</div>
+							<div class="account_op col_l">
+								<a href="index.html">继续购物</a>
+								<em>|</em>
+								<a href="javascript:;" id="clearAll">清空选中的商品</a>
+							</div>
+							<div class="total_num col_l">
+								已选商品<span id="totalNum">0</span>件
+							</div>
+							<div class="col_l sp_zonge">
+								<p>商品总额：<span class="all_price">￥0.00</span></p>
+								<p>优惠活动：<span class="total_coupons">-￥0.00</span></p>
+							</div>
+							<div class="col_l total_price clear">
+								<span id="totalPrice">￥0.00</span>
+								<em>合计（不含运费）：</em>
+							</div>
+						</div>
+						<div class="total_right col_l">
+							<a href="javascript:;" name="settleaccount">去结算</a>
+						</div>
+					</div>
+
+
+
+
+
+
+
+					<div class="cart_empty_box clear">
+						<em class="cart_ico"></em>
+						<div class="cart_empty_text">
+							<p>购物车空空的哦，赶快去选购心仪的商品吧！</p>
+							<a href="index.html" target="_blank">马上去抢购</a>
+						</div>
+					</div>
+					
+					<div class="other_hot">
+						<h5>大家还在看</h5>
+						<div class="other_hot_list">
+							<em id="leftArrow" class="left_ico_arrow"></em>
+							<em id="rightArrow" class="right_ico_arrow"></em>
+							<ul id="side_slider" class="clear" style="width: 4840px; position: relative; left: -960px;">
+
+								<li>
+									<div>
+										<a href="javascript:;" target="_blank">
+											<img width="220" height="220" src="../images/493d5181f134f0266b68bce0b5420d2b_303x303M.jpg" alt="">
+										</a>
+									</div>
+									<div class="hot_bottom">
+										<a href="javascript:;" target="_blank" class="desc ect" title="金蝉 田园定制窗帘成品 棉麻绣花遮光卧室客厅飘窗帘布 简约现代">金蝉 田园定制窗帘成品 棉麻绣花遮光卧室客厅飘窗帘布 简约现代</a>
+										<div class="clear">
+											<div class="col_l">
+												<p class="my_price">￥113</p>
+												<p class="market_price">市场价: ￥376</p>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div>
+										<a href="javascript:;" target="_blank">
+											<img width="220" height="220" src="../images/9f8cd47ac185cbf26775739a503d71d7_303x303M.jpg" alt="">
+										</a>
+									</div>
+									<div class="hot_bottom">
+										<a href="javascript:;" target="_blank" class="desc ect" title="金蝉 棉麻全遮光客厅卧室窗帘成品 纯色现代简约窗帘定制">金蝉 棉麻全遮光客厅卧室窗帘成品 纯色现代简约窗帘定制</a>
+										<div class="clear">
+											<div class="col_l">
+												<p class="my_price">￥40</p>
+												<p class="market_price">市场价: ￥120</p>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div>
+										<a href="javascript:;" target="_blank">
+											<img width="220" height="220" src="../images/dbe556fba174898ef25dd4ae4c19c47a_303x303M.jpg" alt="">
+										</a>
+									</div>
+									<div class="hot_bottom">
+										<a href="javascript:;" target="_blank" class="desc ect" title="婚房遮光布 女生卧室 田园全遮光窗帘成品 温馨 高档紫色布料">婚房遮光布 女生卧室 田园全遮光窗帘成品 温馨 高档紫色布料</a>
+										<div class="clear">
+											<div class="col_l">
+												<p class="my_price">￥68</p>
+												<p class="market_price">市场价: ￥204</p>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div>
+										<a href="javascript:;" target="_blank">
+											<img width="220" height="220" src="../images/3b47b70b1ad9d5c1523dd615539396fb_303x303M.jpg" alt="">
+										</a>
+									</div>
+									<div class="hot_bottom">
+										<a href="javascript:;" target="_blank" class="desc ect" title="金蝉 窗帘 卧室飘窗窗帘布 亚麻 棉麻客厅餐厅">金蝉 窗帘 卧室飘窗窗帘布 亚麻 棉麻客厅餐厅</a>
+										<div class="clear">
+											<div class="col_l">
+												<p class="my_price">￥38</p>
+												<p class="market_price">市场价: ￥114</p>
+											</div>
+										</div>
+									</div>
+								</li>
+								
+								<li>
+									<div>
+										<a href="javascript:;" target="_blank">
+											<img width="220" height="220" src="../images/47d7ffeb462c1e1b03ebc5686dcae475_303x303M.jpg" alt="">
+										</a>
+									</div>
+									<div class="hot_bottom">
+										<a href="javascript:;" target="_blank" class="desc ect" title="金蝉 高档冰花绒绣花窗帘飘窗阳台现代窗帘窗纱田园风*天鹅之吻">金蝉 高档冰花绒绣花窗帘飘窗阳台现代窗帘窗纱田园风*天鹅之吻</a>
+										<div class="clear">
+											<div class="col_l">
+												<p class="my_price">￥135</p>
+												<p class="market_price">市场价: ￥450</p>
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<li>
+									<div>
+										<a href="javascript:;" target="_blank">
+											<img width="220" height="220" src="../images/8d15fd68996d506d67e18dd058478f69_303x303M.jpg" alt="">
+										</a>
+									</div>
+									<div class="hot_bottom">
+										<a href="javascript:;" target="_blank" class="desc ect" title="金蝉 半遮光双面提花成品韩式现代窗帘窗纱 客厅卧室窗帘金玉满堂">金蝉 半遮光双面提花成品韩式现代窗帘窗纱 客厅卧室窗帘金玉满堂</a>
+										<div class="clear">
+											<div class="col_l">
+												<p class="my_price">￥69</p>
+												<p class="market_price">市场价: ￥230</p>
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<li>
+									<div>
+										<a href="javascript:;" target="_blank">
+											<img width="220" height="220" src="../images/472d23027c55cfa9365a55b6b302c88f_303x303M.jpg" alt="">
+										</a>
+									</div>
+									<div class="hot_bottom">
+										<a href="javascript:;" target="_blank" class="desc ect" title="金蝉 高档提花立体绣窗帘 窗帘成品飘窗现代高档窗帘布*紫气东来">金蝉 高档提花立体绣窗帘 窗帘成品飘窗现代高档窗帘布*紫气东来</a>
+										<div class="clear">
+											<div class="col_l">
+												<p class="my_price">￥148</p>
+												<p class="market_price">市场价: ￥493</p>
+											</div>
+										</div>
+									</div>
+								</li>
+
+								<li>
+									<div>
+										<a href="javascript:;" target="_blank">
+											<img width="220" height="220" src="../images/660eb0a8c00c11a3c240702971bd7d4e_303x303M.jpg" alt="">
+										</a>
+									</div>
+									<div class="hot_bottom">
+										<a href="javascript:;" target="_blank" class="desc ect" title="金蝉 韩式小清新落地帘 客厅卧室房田园窗帘成品定制棉麻布棕榈叶">金蝉 韩式小清新落地帘 客厅卧室房田园窗帘成品定制棉麻布棕榈叶</a>
+										<div class="clear">
+											<div class="col_l">
+												<p class="my_price">￥35</p>
+												<p class="market_price">市场价: ￥117</p>
+											</div>
+										</div>
+									</div>
+								</li>
+							
+								<li>
+									<div>
+										<a href="javascript:;" target="_blank">
+											<img width="220" height="220" src="../images/493d5181f134f0266b68bce0b5420d2b_303x303M.jpg" alt="">
+										</a>
+									</div>
+									<div class="hot_bottom">
+										<a href="javascript:;" target="_blank" class="desc ect" title="金蝉 田园定制窗帘成品 棉麻绣花遮光卧室客厅飘窗帘布 简约现代">金蝉 田园定制窗帘成品 棉麻绣花遮光卧室客厅飘窗帘布 简约现代</a>
+										<div class="clear">
+											<div class="col_l">
+												<p class="my_price">￥113</p>
+												<p class="market_price">市场价: ￥376</p>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div>
+										<a href="javascript:;" target="_blank">
+											<img width="220" height="220" src="../images/9f8cd47ac185cbf26775739a503d71d7_303x303M.jpg" alt="">
+										</a>
+									</div>
+									<div class="hot_bottom">
+										<a href="javascript:;" target="_blank" class="desc ect" title="金蝉 棉麻全遮光客厅卧室窗帘成品 纯色现代简约窗帘定制">金蝉 棉麻全遮光客厅卧室窗帘成品 纯色现代简约窗帘定制</a>
+										<div class="clear">
+											<div class="col_l">
+												<p class="my_price">￥40</p>
+												<p class="market_price">市场价: ￥120</p>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div>
+										<a href="javascript:;" target="_blank">
+											<img width="220" height="220" src="../images/dbe556fba174898ef25dd4ae4c19c47a_303x303M.jpg" alt="">
+										</a>
+									</div>
+									<div class="hot_bottom">
+										<a href="javascript:;" target="_blank" class="desc ect" title="婚房遮光布 女生卧室 田园全遮光窗帘成品 温馨 高档紫色布料">婚房遮光布 女生卧室 田园全遮光窗帘成品 温馨 高档紫色布料</a>
+										<div class="clear">
+											<div class="col_l">
+												<p class="my_price">￥68</p>
+												<p class="market_price">市场价: ￥204</p>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div>
+										<a href="javascript:;" target="_blank">
+											<img width="220" height="220" src="../images/3b47b70b1ad9d5c1523dd615539396fb_303x303M.jpg" alt="">
+										</a>
+									</div>
+									<div class="hot_bottom">
+										<a href="javascript:;" target="_blank" class="desc ect" title="金蝉 窗帘 卧室飘窗窗帘布 亚麻 棉麻客厅餐厅">金蝉 窗帘 卧室飘窗窗帘布 亚麻 棉麻客厅餐厅</a>
+										<div class="clear">
+											<div class="col_l">
+												<p class="my_price">￥38</p>
+												<p class="market_price">市场价: ￥114</p>
+											</div>
+										</div>
+									</div>
+								</li>
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+	
+	
+	
+		<!--footer_buttom-->
+		<div id="footer_buttom_back">
+		<div id="footer_buttom">
+			<div class="footer_bottom">
+				<div class="footer_bottom_container">
+					<div class="fbc_menu">
+						<ul>
+							<li>
+								<a hidefocus="" href="javascript:;" target="_blank" rel="nofollow">关于我们</a>
+								<span></span>
+							</li>
+							<li>
+								<a hidefocus="" href="javascript:;" target="_blank" rel="nofollow">联系我们</a>
+								<span></span>
+							</li>
+							<li>
+								<a hidefocus="" href="javascript:;" target="_blank" rel="nofollow">友情链接</a>
+								<span></span>
+							</li>
+							<li>
+								<a hidefocus="" href="javascript:;" target="_blank" rel="nofollow">商家入驻</a>
+								<span></span>
+							</li>
+							<li>
+								<a href="javascript:;" target="_blank" rel="nofollow">帮助中心</a>
+								<span></span>
+							</li>
+							<li>
+								<a hidefocus="" href="javascript:;" target="_blank" rel="nofollow">意见反馈</a>
+								<span></span>
+							</li>
+							<li>
+								<a hidefocus="" href="javascript:;" target="_blank" rel="nofollow">高薪聘请</a>
+								<span></span>
+							</li>
+							<li>
+								<a hidefocus="" href="javascript:;" target="_blank" rel="nofollow">法律声明</a>
+							</li>
+						</ul>
+
+					</div>
+					<div class="fbc_copyright">© 2016 Tubatu.com 土巴兔装修网和设计师社区 保留所有权利</div>
+					<div class="fbc_icp">中国装修网
+						<a href="javascript:;" target="_blank" rel="nofollow">粤ICP备08125558号</a>
+					</div>
+					<div class="fbc_icpico">
+						<a href="javascript:;" target="_blank" rel="nofollow" title="深圳市市场监督管理局企业主体身份公示" alt="深圳市市场监督管理局企业主体身份公示"><span class="fbc_ico1"></span></a>
+						<a href="javascript:;" target="_blank" rel="nofollow"><span class="fbc_ico2"></span></a>
+						<a href="javascript:;" target="_blank" rel="nofollow"><span class="fbc_ico3"></span></a>
+						<a href="javascript:;" target="_blank" rel="nofollow"><span class="fbc_ico4"></span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<script type="text/javascript" src="../js/shopping.js" ></script>
+	</body>
+</html>

@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/index.css" />
+		<link rel="stylesheet" href="../css/common.css" />	
+		<link rel="stylesheet" href="../css/louceng.css" />
+		<link rel="stylesheet" href="../css/common1.css" />
+		<link rel="stylesheet" href="../css/shopList.css" />
+		<script type="text/javascript" src="../js/jquery-1.12.4.js" ></script>
+		<script type="text/javascript" src="../js/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="../js/strOper.js" ></script>
+		<script type="text/javascript" src="../js/jquery.lazyload.js" ></script>
+	</head>
+	<body>
+		<!--header-->
+		<div id="header_back">
+			<div id="header">
+				<div class="header_left">
+					<ul>
+						<li>
+							<a href="javascript:;">返回土巴兔首页</a>
+							<span class="hl_line"></span>
+						</li>
+						<li>
+							<div rel="nofollow" class="address_box">
+								<a href="javascript:;" class="address">
+									<p class="ect">北京</p>
+									<i class="triangle_down"></i>
+								</a>
+								<div class="user_memu">
+		                            <div class="user_city">
+		                                <p class="user_hot_city">热门城市</p>
+		                                <a href="javascript:;" rel="nofollow" tname="北京" tcode="bj" townid="1672">北京</a>
+		                                <a href="javascript:;" rel="nofollow" tname="上海" tcode="sh" townid="1103">上海</a>
+		                                <a href="javascript:;" rel="nofollow" tname="广州" tcode="gz" townid="1121">广州</a>
+		                                <a href="javascript:;" rel="nofollow" tname="深圳" tcode="sz" townid="1130">深圳</a>
+		                                <a href="javascript:;" rel="nofollow" tname="南京" tcode="nj" townid="2827">南京</a>
+		                                <a href="javascript:;" rel="nofollow" tname="苏州" tcode="suzhou" townid="2929">苏州</a>
+		                                <a href="javascript:;" rel="nofollow" tname="杭州" tcode="hz" townid="591">杭州</a>
+		                                <a href="javascript:;" class="user_more_city" rel="nofollow">更多城市</a>
+		                            </div>
+		                        </div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="header_right">
+					<ul>
+		                <li>
+		                    <!--未登录状态-->
+		                    <label id="nav_user_data">
+		                        <a href="login.html" class="hr_login" rel="nofollow">请登录</a>
+		                        <a href="register.html" class="hr_reg" rel="nofollow">注册</a>
+		                    </label>
+		                    <span class="hl_line"></span>
+		                    <span class="hl_line"></span>
+		                    <a class="top_service_link" href="javascript:;" rel="nofollow">在线客服</a>
+		                    <span class="hl_line"></span>
+		                    <a href="javascript:;" target="_blank" rel="nofollow">商家入驻</a>
+		                    <span class="hl_line"></span>
+		                    <a href="javascript:;" target="_blank" rel="nofollow">帮助中心</a>
+		                    <span class="hl_line"></span>
+		                    <a class="top_mobile">
+		                        <span class="top_mobile_top"><i class="top_mobile_ico"></i>手机商城</span>
+		                        <span class="top_mobile_bottom">
+		                            <i class="top_mobilecode_ico"></i>
+		                            <i class="top_mobile_bottom_txt">扫一扫<br>手机购物更优惠</i>
+		                        </span>
+		                    </a>
+		                </li>
+		                <li class="header_searchbox">
+		                    <form id="" onsubmit="" method="get">
+		                        <div class="header_search">
+		                            <input type="text" class="header_search_input" name="keyword">
+		                            <em class="header_top_search_input_text"></em>                   
+		                            <input type="submit" class="header_search_submit" value=" "/>
+		                        </div>
+		                    </form>
+		                </li>
+		            </ul>
+				</div>
+			</div>
+		</div>
+		<!--logo-->
+		<div id="logo">
+			<a href="index.html" class="logo_left">土巴兔</a>
+			<a href="index.html"><span class="logo_right">家居商城</span></a>
+		</div>
+		
+			
+		<!--nav-->
+		<div id="nav_back">
+			<div id="nav">
+				<div class="banner_box">
+					
+				</div>
+				<ul class="nav">
+					<li class="first"><a class="white" href="javascript:;">全部商品分类</a>
+       					 <ul id="goodsMenu" class="goodsMenu" style="display:none;">
+             				<li>
+            					<p class="p1"><em class="icon1"></em><a href="javascript:;" target="_blank">装修主材</a></p>
+                                <p class="p2">
+                               		<a href="javascript:;" target="_blank">厨卫</a>
+                                    <a href="javascript:;" target="_blank">地板</a>
+                                    <a href="javascript:;" target="_blank">瓷砖</a>
+                                    <a href="javascript:;" target="_blank">墙纸</a>
+                                    <a href="javascript:;" target="_blank">开关</a>
+                            	</p>
+                                <em class="nav_img"></em>
+            				</li>
+                            <li>
+                				<p class="p1"><em class="icon2"></em><a href="javascript:;" target="_blank">家具软装</a></p>
+                                <p class="p2">
+                                    <a href="javascript:;" target="_blank">沙发</a>
+                                    <a href="javascript:;" target="_blank">床</a>
+                                    <a href="javascript:;" target="_blank">床垫</a>
+                                    <a href="javascript:;" target="_blank">餐桌</a>
+                                    <a href="javascript:;" target="_blank">儿童房</a>
+                                </p>
+                                <em class="nav_img"></em>
+            				</li>
+                            <li>
+                				<p class="p1"><em class="icon3"></em><a href="javascript:;" target="_blank">家用/厨房电器</a></p>
+                                <p class="p2">
+                                    <a href="javascript:;" target="_blank">烟灶套装</a>
+                                    <a href="javascript:;" target="_blank">净水器</a>
+                                    <a href="javascript:;" target="_blank">热水器</a>
+                            	</p>
+                                <em class="nav_img"></em>
+            				</li>
+                            <li>
+               					 <p class="p1"><em class="icon4"></em><a href="javascript:;" target="_blank">灯饰照明</a></p>
+                           		 <p class="p2">
+                                    <a href="javascript:;" target="_blank">吸顶灯</a>
+                                    <a href="javascript:;" target="_blank">吊灯</a>
+                                    <a href="javascript:;" target="_blank">台灯</a>
+                                    <a href="javascript:;" target="_blank">LED照明</a>
+                           		 </p>
+                                <em class="nav_img"></em>
+          				  	</li>
+                            <li>
+                				<p class="p1"><em class="icon5"></em><a href="javascript:;" target="_blank">全屋定制</a></p>
+                           		 <p class="p2">
+                                    <a href="javascript:;" target="_blank">木门</a>
+                                    <a href="javascript:;" target="_blank">集成吊顶</a>
+                                    <a href="javascript:;" target="_blank">橱柜</a>
+                                    <a href="javascript:;" target="_blank">定制衣柜</a>
+                            	</p>
+                                <em class="nav_img"></em>
+         				    </li>
+                       	 	<li class="last"><a href="javascript:;" target="_blank" name="zcbTab">主材包<br>尊享系列399主材包</a></li>
+   						 </ul>
+   						 <div name="cateContent" class="ps_bg_f7f7f7" style="display: none;">
+									<div class="top clear">
+										<div class="top_l">
+											<div class="header_search_box">
+												<h4><a href="" target="_blank">厨卫</a></h4>
+												<div class="header_search_a">
+													<div class=" ml_a">
+														<a href="javascript:;" class="f_c_e81a62" target="_blank"><span class="htr_line"></span>淋浴花洒</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>卫浴龙头</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>浴霸</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>洗面盆</a>
+														<a href="javascript:;" class="f_c_e81a62" target="_blank"><span class="htr_line"></span>坐便器</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>坐便器盖板</a>
+														<a href="javascript:;" class="f_c_e81a62" target="_blank"><span class="htr_line"></span>浴室柜</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>地漏</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>角阀</a>
+														<a href="javascript:;" class="f_c_e81a62" target="_blank"><span class="htr_line"></span>智能坐便器</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>卫浴五金/挂件</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>卫浴配件</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>淋浴房</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>厨盆/水槽</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>龙头</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>厨房挂件/配件</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>拉蓝</a>
+													</div>
+												</div>
+											</div>
+											<div class="header_search_box">
+												<h4><a href="javascript:;" target="_blank">地板</a></h4>
+												<div class="header_search_a">
+													<div class=" ml_a">
+														<a href="javascript:;" class="f_c_e81a62" target="_blank"><span class="htr_line"></span>强化复合地板</a>
+														<a href="javascript:;" class="f_c_e81a62" target="_blank"><span class="htr_line"></span>实木复合地板</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>实木地板</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>PVC地板</a>
+													</div>
+												</div>
+											</div>
+											<div class="header_search_box">
+												<h4><a href="javascript:;" target="_blank">涂料</a></h4>
+												<div class="header_search_a">
+													<div class=" ml_a">
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>防水涂料</a>
+														<a href="javascript:;" class="f_c_e81a62" target="_blank"><span class="htr_line"></span>乳胶漆</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>木器漆</a>
+														<a href="javascript:;" class="f_c_e81a62" target="_blank"><span class="htr_line"></span>硅藻泥</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>腻子粉</a>
+													</div>
+												</div>
+											</div>
+											<div class="header_search_box">
+												<h4><a href="javascript:;" target="_blank">净化除味</a></h4>
+												<div class="header_search_a">
+													<div class=" ml_a">
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>甲醛清除剂</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="top_r">
+											<div class="header_search_box">
+												<h4><a href="javascript:;" target="_blank">开关插座</a></h4>
+												<div class="header_search_a">
+													<div class=" ml_a">
+														<a href="javascript:;" class="f_c_e81a62" target="_blank"><span class="htr_line"></span>开关</a>
+														<a href="javascript:;" class="f_c_e81a62" target="_blank"><span class="htr_line"></span>插座</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>地插</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>断路器</a>
+														<a href="javascript:;" class="f_c_e81a62" target="_blank"><span class="htr_line"></span>接线板</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>防溅盒</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>布线箱</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>电工配件</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>底盒</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>配件箱</a>
+													</div>
+												</div>
+											</div>
+											<div class="header_search_box">
+												<h4><a href="javascript:;" target="_blank">墙纸</a></h4>
+												<div class="header_search_a">
+													<div class=" ml_a">
+														<a href="javascript:;" class="f_c_e81a62" target="_blank"><span class="htr_line"></span>无纺布墙纸</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>PVC墙纸</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>纯纸墙纸</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>3D墙纸</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>胶水</a>
+													</div>
+												</div>
+											</div>
+											<div class="header_search_box">
+												<h4><a href="javascript:;" target="_blank">五金工具</a></h4>
+												<div class="header_search_a">
+													<div class=" ml_a">
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>锁具</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>合页</a>
+													</div>
+												</div>
+											</div>
+											<div class="header_search_box">
+												<h4><a href="javascript:;" target="_blank">瓷砖</a></h4>
+												<div class="header_search_a">
+													<div class=" ml_a">
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>抛晶砖</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>微晶石</a>
+														<a href="javascript:;" class="f_c_e81a62" target="_blank"><span class="htr_line"></span>釉面砖</a>
+														<a href="javascript:;" class="f_c_e81a62" target="_blank"><span class="htr_line"></span>仿古砖</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>玻化砖</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>美缝施工</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="middle">
+										<h4>推荐品牌</h4>
+										<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8111.png"  alt="" width="80" height="38"></a>
+										<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8112.png"  alt="" width="80" height="38"></a>
+										<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8113.png"  alt="" width="80" height="38"></a>
+										<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8114.png"  alt="" width="80" height="38"></a>
+										<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8115.png"  alt="" width="80" height="38"></a>
+										<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8116.png"  alt="" width="80" height="38"></a>
+										<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8117.png"  alt="" width="80" height="38"></a>
+										<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8118.png"  alt="" width="80" height="38"></a>
+									</div>
+
+								</div>
+
+						 <div name="cateContent" class="ps_bg_f7f7f7" style="display: none;">
+							<div class="top clear">
+								<div class="top_l">
+									<div class="header_search_box">
+										<h4><a href="javascript:;" target="_blank">客厅家具</a></h4>
+										<div class="header_search_a">
+											<div class=" ml_a">
+												<a href="javascript:;" class="f_c_e81a62" target="_blank"><span class="htr_line"></span>沙发</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>茶几</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>电视柜</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>鞋柜</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>斗柜</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>门厅柜</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>边几/角几</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>花架/几</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>柜子</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>椅子</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>真皮沙发</a>
+											</div>
+										</div>
+									</div>
+									<div class="header_search_box">
+										<h4><a href="javascript:;" target="_blank">书房家具</a></h4>
+										<div class="header_search_a">
+											<div class=" ml_a">
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>书桌</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>电脑桌</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>书柜</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>电脑椅</a>
+											</div>
+										</div>
+									</div>
+									<div class="header_search_box">
+										<h4><a href="javascript:;" target="_blank">儿童家具</a></h4>
+										<div class="header_search_a">
+											<div class=" ml_a">
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>儿童桌</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>儿童床</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>子母床</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>儿童椅</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>儿童衣柜</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>儿童床垫</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>儿童床头柜</a>
+											</div>
+										</div>
+									</div>
+									<div class="header_search_box">
+										<h4><a href="javascript:;" target="_blank">家居饰品</a></h4>
+										<div class="header_search_a">
+											<div class=" ml_a">
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>日常家居</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>纸巾盒</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>茶具</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>花架</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="top_r">
+									<div class="header_search_box">
+										<h4><a href="javascript:;" target="_blank">卧室家具</a></h4>
+										<div class="header_search_a">
+											<div class=" ml_a">
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>床</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>床垫</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>床头柜</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>衣柜</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>梳妆台/凳</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>穿衣镜</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>衣帽架</a>
+											</div>
+										</div>
+									</div>
+									<div class="header_search_box">
+										<h4><a href="javascript:;" target="_blank">餐厅家具</a></h4>
+										<div class="header_search_a">
+											<div class=" ml_a">
+												<a href="javascript:;" class="f_c_e81a62" target="_blank"><span class="htr_line"></span>餐桌</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>餐椅</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>餐边柜</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>酒柜</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>吧台</a>
+											</div>
+										</div>
+									</div>
+									<div class="header_search_box">
+										<h4><a href="javascript:;" target="_blank">家纺</a></h4>
+										<div class="header_search_a">
+											<div class=" ml_a">
+												<a href="javascript:;" class="f_c_e81a62" target="_blank"><span class="htr_line"></span>床品套件</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>被子</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>蚕丝被</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>枕头</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>颈椎/保健枕头</a>
+												<a href="javascript:;" class="f_c_e81a62" target="_blank"><span class="htr_line"></span>抱枕靠垫</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>窗帘/窗纱</a>
+												<a href="javascript:;" class="f_c_e81a62" target="_blank"><span class="htr_line"></span>地毯</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>毛巾浴巾</a>
+											</div>
+										</div>
+									</div>
+									<div class="header_search_box">
+										<h4><a href="javascript:;" target="_blank">阳台户外</a></h4>
+										<div class="header_search_a">
+											<div class=" ml_a">
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>晾衣架</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="middle">
+								<h4>推荐品牌</h4>
+								<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8111.png"  alt="" width="80" height="38"></a>
+								<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8112.png"  alt="" width="80" height="38"></a>
+								<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8113.png"  alt="" width="80" height="38"></a>
+								<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8114.png"  alt="" width="80" height="38"></a>
+								<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8115.png"  alt="" width="80" height="38"></a>
+								<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8116.png"  alt="" width="80" height="38"></a>
+								<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8117.png"  alt="" width="80" height="38"></a>
+								<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8118.png"  alt="" width="80" height="38"></a>
+							</div>
+
+						</div>
+
+						 <div name="cateContent" class="ps_bg_f7f7f7" style="display: none;">
+							<div class="top clear">
+								<div class="top_l">
+									<div class="header_search_box">
+										<h4><a href="javascript:;" target="_blank">厨房电器</a></h4>
+										<div class="header_search_a">
+											<div class=" ml_a">
+												<a href="javascript:;" class="f_c_e81a62" target="_blank"><span class="htr_line"></span>烟灶套装</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>电压力锅</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>电饭煲</a>
+												<a href="javascript:;" class="f_c_e81a62" target="_blank"><span class="htr_line"></span>豆浆机</a>
+												<a href="javascript:;" class="f_c_e81a62" target="_blank"><span class="htr_line"></span>榨汁机/原汁机</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>料理机</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>电磁炉</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>电热水壶</a>
+												<a href="javascript:;" class="f_c_e81a62" target="_blank"><span class="htr_line"></span>热水器</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>小厨宝</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>电烤箱</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>微波炉</a>
+											</div>
+										</div>
+									</div>
+									<div class="header_search_box">
+										<h4><a href="javascript:;" target="_blank">厨具</a></h4>
+										<div class="header_search_a">
+											<div class=" ml_a">
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>厨房烹饪</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>压力锅</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>炒锅</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>电陶炉</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>电饭煲</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="top_r">
+									<div class="header_search_box">
+										<h4><a href="javascript:;" target="_blank">生活电器</a></h4>
+										<div class="header_search_a">
+											<div class=" ml_a">
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>净水器</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>饮水机</a>
+											</div>
+										</div>
+									</div>
+									<div class="header_search_box">
+										<h4><a href="javascript:;" target="_blank">大家电</a></h4>
+										<div class="header_search_a">
+											<div class=" ml_a">
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>空调</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>消毒柜</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>热水器</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>冰箱</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>洗衣机</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>滚筒洗衣机</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>变频空调</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="middle">
+								<h4>推荐品牌</h4>
+								<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8111.png"  alt="" width="80" height="38"></a>
+								<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8112.png"  alt="" width="80" height="38"></a>
+								<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8113.png"  alt="" width="80" height="38"></a>
+								<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8114.png"  alt="" width="80" height="38"></a>
+								<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8115.png"  alt="" width="80" height="38"></a>
+								<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8116.png"  alt="" width="80" height="38"></a>
+								<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8117.png"  alt="" width="80" height="38"></a>
+								<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8118.png"  alt="" width="80" height="38"></a>
+							</div>
+							<div class="bottom">
+								<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/656_7729.jpg"  alt="" width="445" height="80"></a>
+								<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/656_7730.jpg"  alt="" width="445" height="80"></a>
+							</div>
+
+						</div>
+
+						 <div name="cateContent" class="ps_bg_f7f7f7" style="display: none;">
+							<div class="top clear">
+								<div class="top_l">
+									<div class="header_search_box">
+										<h4><a href="javascript:;" target="_blank">灯具灯饰</a></h4>
+										<div class="header_search_a">
+											<div class=" ml_a">
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>吸顶灯</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>吊灯</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>筒灯</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>壁灯</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>射灯</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>落地灯</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>水晶灯</a>
+											</div>
+										</div>
+									</div>
+									<div class="header_search_box">
+										<h4><a href="javascript:;" target="_blank">吊灯</a></h4>
+										<div class="header_search_a">
+											<div class=" ml_a">
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>枝形吊灯</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>风扇吊灯</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>水晶吊灯</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>铁艺吊灯</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>吧台灯</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>装饰台灯</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="top_r">
+									<div class="header_search_box">
+										<h4><a href="javascript:;" target="_blank">LED照明</a></h4>
+										<div class="header_search_a">
+											<div class=" ml_a">
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>台灯</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>光源</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>筒灯</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>应急灯</a>
+												<a href="javascript:;" target="_blank"><span class="htr_line"></span>灯带</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="middle">
+								<h4>推荐品牌</h4>
+								<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8111.png"  alt="" width="80" height="38"></a>
+								<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8112.png"  alt="" width="80" height="38"></a>
+								<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8113.png"  alt="" width="80" height="38"></a>
+								<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8114.png"  alt="" width="80" height="38"></a>
+								<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8115.png"  alt="" width="80" height="38"></a>
+								<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8116.png"  alt="" width="80" height="38"></a>
+								<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8117.png"  alt="" width="80" height="38"></a>
+								<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8118.png"  alt="" width="80" height="38"></a>
+							</div>
+							<div class="bottom">
+								<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/656_7729.jpg"  alt="" width="445" height="80"></a>
+								<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/656_7730.jpg"  alt="" width="445" height="80"></a>
+							</div>
+
+						</div>
+
+						 <div name="cateContent" class="ps_bg_f7f7f7" style="display: none;">
+									<div class="top clear">
+										<div class="top_l">
+											<div class="header_search_box">
+												<h4><a href="javascript:;" target="_blank">室内门</a></h4>
+												<div class="header_search_a">
+													<div class=" ml_a">
+														<a href="javascript:;" class="f_c_e81a62" target="_blank"><span class="htr_line"></span>进户门</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>庭院门</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>移门</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>防火门</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>门档</a>
+													</div>
+												</div>
+											</div>
+											<div class="header_search_box">
+												<h4><a href="javascript:;" target="_blank">整体橱柜</a></h4>
+												<div class="header_search_a">
+													<div class=" ml_a">
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>柜体</a>
+														<a href="javascript:;" class="f_c_e81a62" target="_blank"><span class="htr_line"></span>门板</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>台面</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>拉蓝</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="top_r">
+											<div class="header_search_box">
+												<h4><a href="javascript:;" target="_blank">集成吊顶</a></h4>
+												<div class="header_search_a">
+													<div class=" ml_a">
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>扣板模块</a>
+														<a href="javascript:;" class="f_c_e81a62" target="_blank"><span class="htr_line"></span>照明模块</a>
+														<a href="javascript:;" class="f_c_e81a62" target="_blank"><span class="htr_line"></span>换气模块</a>
+														<a href="javascript:;" target="_blank"><span class="htr_line"></span>电器模块</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="middle">
+										<h4>推荐品牌</h4>
+										<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8111.png"  alt="" width="80" height="38"></a>
+										<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8112.png"  alt="" width="80" height="38"></a>
+										<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8113.png"  alt="" width="80" height="38"></a>
+										<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8114.png"  alt="" width="80" height="38"></a>
+										<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8115.png"  alt="" width="80" height="38"></a>
+										<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8116.png"  alt="" width="80" height="38"></a>
+										<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8117.png"  alt="" width="80" height="38"></a>
+										<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/761_8118.png"  alt="" width="80" height="38"></a>
+									</div>
+									<div class="bottom">
+										<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/656_7729.jpg"  alt="" width="445" height="80"></a>
+										<a href="javascript:;" target="_blank"><img class="cateLazy" src="../images/656_7730.jpg"  alt="" width="445" height="80"></a>
+									</div>
+
+								</div>
+   					<!---->
+					</li>
+   					<li class="on"><a href="index.html">首页</a></li>
+   					<li><a href="javascript:;">建材城</a></li>
+   					<li><a href="javascript:;">家具城</a></li>
+   					<li><a href="javascript:;">品牌特卖</a></li>
+   					<li><a href="javascript:;">主材包</a></li>
+			</div>
+		</div>
+		
+		<!--shopList_container-->
+		<div id="shopList_container">
+				<div id="searchItem" class="search_select_type mt20">
+					<div class="search_mall_fr f_song">
+						共<em>21</em>件宝贝
+					</div>
+					<h1 class="search_mall_nav">
+						<ul>
+							<li class="">
+								<a href="index.html">商城首页</a>
+								<em class="f_song">></em>
+								<a href="javascript:;">住宅家具</a>
+								<em class="f_song">></em>
+								雅兰
+								<a href="javascript:;" class="link_e81a62">
+									品牌<span>AIRLAND雅兰</span>
+									<em class="f_song">x</em>
+								</a>
+							</li>
+						</ul>
+					</h1>
+					<div name="itemList" class="search_st_dl max_height_s">
+						<div class="search_st_dt">
+							<a href="javascript:;">床垫类</a>
+						</div>
+						<div class="search_st_dd max_height_s" name="itemContent">
+							<div class="all_gz">
+								<a href="javascript:;">弹簧床垫</a>
+								<a href="javascript:;">乳胶床垫</a>
+							</div>
+						</div>
+						<div name="operate" class="choice_options_box">
+							<a href="javascript:;" class="choice_options">
+								<em class="icn_insert"></em>多选
+							</a>
+							<a href="javascript:;" name="showMore" class="more_options" style="display: none;">
+								<em class="icn_arrow_down"></em>更多选项
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="list_container list_container1 mt10">
+					<ul id="goodsList" class="list clear">
+						<!--<li class="">
+							<a href="javascript:;" class="pic" target="_blank">
+								<img src="../images/551d961bb772e1779762d042ef8f4688_303x303M.jpg" class="lazy" width="210" height="210" style="display: inline-block;" />
+							</a>
+							<div class="cur_pric">
+								<p class="cur_msg">
+									<a href="javascript:;" target="_blank">
+										雅兰床垫 BEVIS 软硬双选 护脊弹簧
+									</a>
+								</p>
+								<p class="f_c_e81a62 cur_msg">软硬舒适两用款 办公族护脊 精钢五环护脊弹簧　</p>
+								<p class="pri_msg">
+									￥<span class="f_arial">2799</span><del>$6365</del>
+								</p>
+								<p class="pri_total">
+									已出售<span>35</span>件
+								</p>
+							</div>
+						</li>
+					
+					-->
+					</ul>
+				</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+		<!--footer-->
+		<div id="footer">
+			<div class="mall_genuine_box">
+				<div class="mall_genuine_rose">
+					<a target="_blank" href="javascript:;" rel="nofollow">
+						<dl class="first">
+							<dt>
+		            <em class="icn_n_zheng_b"></em>
+		        </dt>
+							<dd><b>正品低价</b><em>知名品牌 厂家直售</em></dd>
+						</dl>
+					</a>
+					<a target="_blank" href="javascript:;" rel="nofollow">
+						<dl>
+							<dt>
+		            <em class="icn_n_song_b"></em>
+		        </dt>
+							<dd><b>送货入户</b><em>一键下单 足不出户</em></dd>
+						</dl>
+					</a>
+					<a target="_blank" href="javascript:;" rel="nofollow">
+						<dl>
+							<dt>
+		            <em class="icn_n_shang_b"></em>
+		        </dt>
+							<dd><b>上门安装</b><em>专业团队 技术保障</em></dd>
+						</dl>
+					</a>
+					<a target="_blank" href="javascript:;" rel="nofollow">
+						<dl class="last">
+							<dt>
+		            <em class="icn_n_tui_b"></em>
+		        </dt>
+							<dd><b>退换无忧</b><em>7天无理由退换货</em></dd>
+						</dl>
+					</a>
+				</div>
+		
+				<div class="shop_direct_dl">
+					<dl>
+						<dt>购物指南</dt>
+						<dd>
+							<a href="javascript:;" target="_blank" rel="nofollow">购物流程</a>
+						</dd>
+						<dd>
+							<a href="javascript:;" target="_blank" rel="nofollow">支付方式</a>
+						</dd>
+						<dd>
+							<a href="javascript:;" target="_blank" rel="nofollow">发票制度</a>
+						</dd>
+						<dd>
+							<a href="javascript:;" target="_blank">品牌排行榜</a>
+						</dd>
+					</dl>
+							<dl>
+								<dt>服务保障</dt>
+								<dd>
+									<a href="javascript:;" target="_blank" rel="nofollow">100%正品</a>
+								</dd>
+								<dd>
+									<a href="javascript:;" target="_blank" rel="nofollow">免费送货</a>
+								</dd>
+								<dd>
+									<a href="javascript:;" target="_blank" rel="nofollow">正规发票</a>
+								</dd>
+								<dd>
+									<a href="javascript:;" target="_blank" rel="nofollow">七天退换</a>
+								</dd>
+							</dl>
+							<dl>
+								<dt>配送方式</dt>
+								<dd>
+									<a href="javascript:;" target="_blank" rel="nofollow">配送范围</a>
+								</dd>
+								<dd>
+									<a href="javascript:;" target="_blank" rel="nofollow">验货与签收</a>
+								</dd>
+								<dd>
+									<a href="javascript:;" target="_blank" rel="nofollow">安装说明</a>
+								</dd>
+							</dl>
+							<dl class="last">
+								<dt>售后服务</dt>
+								<dd>
+									<a href="javascript:;" target="_blank" rel="nofollow">退换货政策</a>
+								</dd>
+								<dd>
+									<a href="javascript:;" target="_blank" rel="nofollow">退换货流程</a>
+								</dd>
+								<dd>
+									<a href="javascript:;" target="_blank" rel="nofollow">退款方式和时效</a>
+								</dd>
+							</dl>
+						</div>
+					</div>
+				</ul>
+			</div>
+		<!--footer_buttom-->
+		<div id="footer_buttom_back">
+		<div id="footer_buttom">
+			<div class="footer_bottom">
+				<div class="footer_bottom_container">
+					<div class="fbc_menu">
+						<ul>
+							<li>
+								<a hidefocus="" href="javascript:;" target="_blank" rel="nofollow">关于我们</a>
+								<span></span>
+							</li>
+							<li>
+								<a hidefocus="" href="javascript:;" target="_blank" rel="nofollow">联系我们</a>
+								<span></span>
+							</li>
+							<li>
+								<a hidefocus="" href="javascript:;" target="_blank" rel="nofollow">友情链接</a>
+								<span></span>
+							</li>
+							<li>
+								<a hidefocus="" href="javascript:;" target="_blank" rel="nofollow">商家入驻</a>
+								<span></span>
+							</li>
+							<li>
+								<a href="javascript:;" target="_blank" rel="nofollow">帮助中心</a>
+								<span></span>
+							</li>
+							<li>
+								<a hidefocus="" href="javascript:;" target="_blank" rel="nofollow">意见反馈</a>
+								<span></span>
+							</li>
+							<li>
+								<a hidefocus="" href="javascript:;" target="_blank" rel="nofollow">高薪聘请</a>
+								<span></span>
+							</li>
+							<li>
+								<a hidefocus="" href="javascript:;" target="_blank" rel="nofollow">法律声明</a>
+							</li>
+						</ul>
+
+					</div>
+					<div class="fbc_copyright">© 2016 Tubatu.com 土巴兔装修网和设计师社区 保留所有权利</div>
+					<div class="fbc_icp">中国装修网
+						<a href="javascript:;" target="_blank" rel="nofollow">粤ICP备08125558号</a>
+					</div>
+					<div class="fbc_icpico">
+						<a href="javascript:;" target="_blank" rel="nofollow" title="深圳市市场监督管理局企业主体身份公示" alt="深圳市市场监督管理局企业主体身份公示"><span class="fbc_ico1"></span></a>
+						<a href="javascript:;" target="_blank" rel="nofollow"><span class="fbc_ico2"></span></a>
+						<a href="javascript:;" target="_blank" rel="nofollow"><span class="fbc_ico3"></span></a>
+						<a href="javascript:;" target="_blank" rel="nofollow"><span class="fbc_ico4"></span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		
+		<!--rightSide-->
+		<div id="rightSide">
+			<div class="rightSide_all">
+				<div class="rightSide_middle">
+					<a class="shopcart" href="javascript:;">
+						<span class="cartimg"></span>
+						<span class="carttext">购物车</span>
+						<span class="count">0</span>
+					</a>
+				</div>
+				<div class="rightSide_top">
+					<div class="cart_tip1">
+					<div class="dingdan">
+						<a href="javascript:;">
+							<dl>
+								<dt></dt>
+								<dd>订单</dd>
+							</dl>
+							<em class="sanjiao"></em>
+						</a>
+					</div>
+					<div class="cart_tip">
+						<a class="" href="javascript:;">我的订单</a>
+					</div>
+					</div>
+					<div class="cart_tip2">
+					<div class="juan">
+						<a href="javascript:;">
+							<dl>
+								<dt></dt>
+								<dd>劵</dd>
+							</dl>
+							<em class="sanjiao"></em>
+						</a>
+						<div class="cart_tip">
+							<a class="" href="javascript:;">我的优惠券</a>
+						</div>
+					</div>
+					</div>
+					
+					<div class="kefu">
+						<a href="javascript:;">
+							<em class="gif_jm"></em>
+							<i class="ewmImg"></i>
+							<em class="gif_rabbit"></em>
+							<dl>
+								<dt></dt>
+								<dd>客服</dd>
+							</dl>
+						</a>
+					</div>
+					
+					<div class="cart_tip3">
+					<div class="erweima">
+						<a href="javascript:;">
+							<i class="ewm"></i>
+						</a>
+						<em class="sanjiao"></em>
+					</div>
+					</div>
+				</div>
+			</div>
+			<div class="rightSide_bottom">
+				<div class="cart_tip4">
+				<div class="return_top">
+					<a href="javascript:;">
+						<dl>
+							<dt></dt>
+						</dl>
+						<em class="sanjiao"></em>
+					</a>
+				</div>
+				<div class="cart_tip fhtb">
+					<a class="" href="javascript:;">返回顶部</a>
+				</div>
+				</div>
+			</div>
+			<div class="shopping_list">
+				<div class="list_wrap">
+					<div class="list_title clear">
+						<span>购物车</span>
+						<em class="cart_close"></em>
+					</div>
+					<div class="shopping_wrap">
+						<div class="cart_empty_ico"></div>
+						<p class="cart_empty_text">空荡荡的购物车！</p>
+						<ul class="shopping_list_ul" style="height: auto;">
+						</ul>
+					</div>
+					<div class="shopping_bottom">
+						<div class="settle_accounts clear">
+							<p class="col_l">
+								共
+								<span class="totalnum">1</span>
+								件商品
+							</p>
+							<p class="col_r">
+								共计
+								<span class="totalprice settle_num">3580.00</span>
+								元
+							</p>
+						</div>
+						<div class="settle_btn">
+							<a class="empty_status_btn" href="index.html" target="_blank">开始选购</a>
+							<a href="shopping.html" class="jiesuan" target="_blank">去购物车结算<em></em></a>
+						</div>
+					</div>
+				</div>
+					
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="../js/index.js" ></script>
+		<script type="text/javascript" src="../js/common.js" ></script>
+		<script type="text/javascript" src="../js/detail.js" ></script>
+		<script type="text/javascript" src="../js/shopList.js" ></script>
+	</body>
+</html>
